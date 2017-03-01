@@ -39,7 +39,8 @@ namespace strange.examples.multiplecontexts.main
 			{
 				throw new Exception("Can't load a module with a null or empty filepath.");
 			}
-		    SceneManager.LoadScene(filepath);
+			//Application.LoadLevelAdditive(filepath);
+		    SceneManager.LoadScene(filepath, LoadSceneMode.Additive);
 		}
 	}
 }
